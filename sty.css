@@ -21,9 +21,12 @@ table {
     width: 100%;
   }
   
-  td, th{
+  td{
     border: 1px solid #a9a5a5;
     text-align: left;
     padding: 10px;
 
   }
+.bt{
+  width: 25;
+}

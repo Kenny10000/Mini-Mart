@@ -17,14 +17,15 @@
 // var names = ['kenny','bright','enoch','tayo','jdbn3','olu','kdh3hd','dwddeded']
 // console.log(names[7]);
 
-var names = ['kenny','bright','enoch','tayo','jdbn3','olu','kdh3hd']
-names.pop()
-names.shift()
-names.push('hello')
-names.unshift('jioo')
-console.log(names); 
-var cart = []
+// var names = ['kenny','bright','enoch','tayo','jdbn3','olu','kdh3hd']
+// names.pop()
+// names.shift()
+// names.push('hello')
+// names.unshift('jioo')
+// console.log(names); 
 
+
+var cart = []
 function addItems(){
     if (input.value === ''){
         dis.innerHTML = "Please input your product."
@@ -32,7 +33,6 @@ function addItems(){
         cart.push(input.value)
         document.getElementById('input').value = ''
         console.log(cart);
-
         show.innerHTML = ""
         for(i=0; i < cart.length; i++) {
             show.innerHTML +=` 
@@ -45,4 +45,23 @@ function addItems(){
             `
         }
     }
+}
+
+function addFirst(){
+  if (input.value === ''){
+    dis.innerHTML = "Please input your product."
+}else
+  cart.unshift(input.value)
+  show.innerHTML = cart 
+  show.innerHTML =""
+  for(i=0; i < cart.length; i++){
+    show.innerHTML +=`
+    <table>
+    <tr>
+      <td>${i+1}. </td>
+      <td> ${cart[i]}</td>
+    </tr>
+  </table>
+    `
+  }
 }
