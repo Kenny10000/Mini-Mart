@@ -1,0 +1,29 @@
+
+ .err{
+    color: #721c24;
+    background: #f8d7da;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #f5c6cb;
+} 
+.tex{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th{
+    border: 1px solid #a9a5a5;
+    text-align: left;
+    padding: 10px;
+
+  }
