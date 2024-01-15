@@ -7,14 +7,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="sty.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
 </head>
-<body>
+<body onload="loady()">
 
     <!-- <div id="show"></div> -->
 <div class="container-fluid mx-auto col-lg-7 col-10 shadow-sm mt-lg-5 mt-2 p-3">
     <h3 class="text-center tex">Mini Mart</h3>
-<div id="dis" class="err text-center w-100"></div>
-
+    <div id="suc" class="suss text-center"></div>
+<div id="dis" class="err text-center"></div>
     <div class="field input">
         <input class="form-control form-control-sm my-2"  aria-describedby="emailHelp" placeholder="Input your product" required id="input">
     </div>
@@ -22,17 +23,19 @@
             <button class="btn btn-outline-primary my-2 btn-sm BTN" type="button" onclick="addItems()">Submit</button>
           </div>
 </div>
-<div class="container-fluid mx-auto col-lg-7 col-10 shadow-sm mt-lg-2 p-3" id="show">
-
+<div class="container-fluid mx-auto col-lg-7 col-10 shadow-sm mt-lg-2 p-3" >
+    <table class="table table-bordered border-primary" id="show">
+     
+      </table>
 </div>
 
 <div class="container-fluid mx-auto col-lg-7 col-10 shadow-sm mt-lg-2 p-3 text-center">
 <button class="btn btn-sm btn-primary mx-2 my-2 bt" onclick="addFirst()">Add to beginning</button>
-<button class="btn btn-sm btn-danger mx-2 my-2 bt">Delete first</button>
-<button class="btn btn-sm btn-danger mx-2 my-2 bt">Delete last</button>
+<button class="btn btn-sm btn-danger mx-2 my-2 bt" onclick="deleteFirst()">Delete first</button>
+<button class="btn btn-sm btn-danger mx-2 my-2 bt" onclick="deleteLast()">Delete last</button>
 <button class="btn btn-sm btn-danger mx-2 my-2 bt">Delete any</button>
-<button class="btn btn-sm btn-success mx-2 my-2 bt">Edit</button>
-<button class="btn btn-sm btn-danger mx-2 my-2 bt">Delete all</button>
+<button class="btn btn-sm btn-success mx-2 my-2 bt">Edit any</button>
+<button class="btn btn-sm btn-danger mx-2 my-2 bt" onclick="deleteAll()">Delete all</button>
 </div>
     <script src="main.js"></script>
 </body>
